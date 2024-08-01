@@ -1,6 +1,6 @@
 
 /*Hero Section*/
-#home {
+#hero {
   position: relative;
   background-image: url('./images/hero.jpg');
   background-size: cover;
@@ -9,7 +9,7 @@
   height: 90vh;
 }
 
-#home::before {
+#hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,7 +20,7 @@
   z-index: 1;
 }
 
-#home > * {
+#hero > * {
   position: relative;
   z-index: 2;
 }
@@ -53,7 +53,7 @@
 /*Media Query*/
 @media only screen and (max-width:800px) {
 
-#home > * {
+#hero > * {
   top: 10%;
 }
 }
