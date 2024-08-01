@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap Link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/32a0ba5316.js" crossorigin="anonymous"></script>
+	<title>E-Commerce MTE</title>
+</head>
+<body>
+	<main>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+			<div class="container">
+				<a class="navbar-brand d-md-none" href="#">
+					<i class="fa-brands fa-watchman-monitoring" style="color: #b8c1ba;"></i>
+					Timesmart
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasLabel">Timesmart</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav flex-grow-1 justify-content-between">
+							<li class="nav-item"><a class="nav-link" href="#">
+								<i class="fa-brands fa-watchman-monitoring" style="color: #b8c1ba;"></i>
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+							<li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+							<li class="nav-item"><a class="nav-link" href="#orders">Orders</a></li>
+							<li class="nav-item"><a class="nav-link" href="#cart">
+								<i class="fa-brands fa-opencart"></i>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End of Navbar -->
+
+		<!-- Hero section -->
+		<div id="home" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+			<div class="col-md-8 p-lg-5 mx-auto my-5">
+				<h1 class="display-3 fw-bold">Smart Watches Engineered for the Tech Savvy You</h1>
+				<h3 class="fw-normal text-muted mb-3">Elevate Your Everyday with Cutting-Edge Features and Style</h3>
+				<div class="d-flex gap-3 justify-content-center lead fw-normal">
+					<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#features">
+						<i class="fa-brands fa-leanpub me-2"></i>Learn more
+					</a>
+					<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#cart">
+						<i class="fa-brands fa-opencart me-2"></i>Buy
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- End of Hero Section -->
+
+		<!-- Carousel -->
+		<div id="features" class="container my-5 py-5">
+			<div class="row featurette justify-content-evenly">
+				<div class="col-md-5">
+					<h2 class="featurette-heading fw-normal lh-1 my-5">
+						<span class="text-body-secondary">Smart Watch Features</span><br/>
+						That Redefine Your Experience
+					</h2>
+					<p>
+						<strong>Cutting-Edge Performance:</strong> Experience lightning-fast performance with advanced processors that ensure smooth and responsive operation for all your apps and notifications. Enjoy unparalleled speed and efficiency at your fingertips.
+					</p>
+					<p>
+						<strong>Advanced Health Monitoring:</strong> Stay on top of your wellbeing with state-of-the-art sensors that track your heart rate, monitor sleep patterns, and provide personalized health insights. Our smart watches help you stay informed and healthy with every beat.
+					</p>
+					<p>
+						<strong>Sleek Design:</strong> Combine style and functionality with our smart watches’ sleek and modern designs. Perfect for any occasion, from the office to a night out, our watches make a statement while offering top-notch performance.
+					</p>
+				</div>
+				<div class="col-md-5">
+					<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./images/carousel1.jpg" class="d-block w-100" alt="watch1">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/carousel2.jpg" class="d-block w-100" alt="watch2">
+							</div>
+							<div class="carousel-item">
+								<img src="./images/carousel3.jpg" class="d-block w-100" alt="watch3">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Carousel -->
+
+		<!-- Cards -->
+		<div id="products" class="container px-4 py-5" id="custom-cards">
+			<h2 class="pb-2 pt-5 border-top">Featured Products</h2>
+
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+				<div class="col">
+					<div class="card card-contain h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url(./images/card1.jpg);">
+						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Noise Pulse 1</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<i class="fa-regular fa-clock me-2"></i>
+									<i class="fa-brands fa-opencart"></i>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+									<small>5d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card card-contain h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url(./images/card2.jpg);">
+						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Noise Pulse 2</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<i class="fa-regular fa-clock me-2"></i>
+									<i class="fa-brands fa-opencart"></i>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+									<small>4d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card card-contain h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url(./images/card3.jpg);">
+						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Noise Pulse 3</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<i class="fa-regular fa-clock me-2"></i>
+									<i class="fa-brands fa-opencart"></i>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+									<small>2d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Cards -->
+	</main>
+
+	<!-- Footer -->
+	<footer class="container py-5">
+		<div class="row">
+			<div class="col-12 col-md">
+				<p><i class="fa-brands fa-watchman-monitoring"></i> Timesmart</p>
+				<small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Smart Watch Features</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="link-secondary text-decoration-none" href="#">Advanced Fitness Tracking</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Customizable Watch Faces</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Heart Rate Monitoring</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">GPS Navigation</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Support & Resources</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="link-secondary text-decoration-none" href="#">Help Center</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Product Manuals</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">FAQs</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Warranty Information</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Shop by Category</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="link-secondary text-decoration-none" href="#">Fitness Watches</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Luxury Watches</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Smart Bands</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Accessories</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>About Us</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="link-secondary text-decoration-none" href="#">Our Story</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Contact Us</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Careers</a></li>
+					<li><a class="link-secondary text-decoration-none" href="#">Sustainability</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</footer>
+	<!-- End of Footer -->
+
+	<!-- Bootstrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

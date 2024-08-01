@@ -1,0 +1,59 @@
+
+/*Hero Section*/
+#home {
+  position: relative;
+  background-image: url('./images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+#home > * {
+  position: relative;
+  z-index: 2;
+}
+/*End of Hero Section*/
+
+/*Carousel*/
+.carousel-item {
+  height: 500px;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: contain;
+}
+/* End of Carousel */
+
+/*Card*/
+.card-contain {
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100%;
+}
+
+.card h3 {
+  text-shadow: 1px 1px 15px black;
+  color: white;
+}
+/*End of Card*/
+
+/*Media Query*/
+@media only screen and (max-width:800px) {
+
+#home > * {
+  top: 10%;
+}
+}
